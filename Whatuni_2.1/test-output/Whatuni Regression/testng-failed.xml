@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [Whatuni Regression]">
+  <listeners>
+    <listener class-name="com.qa.whatuni.listeners.ExtendReports"/>
+  </listeners>
+  <test name="RegistrationTest(failed)">
+    <classes>
+      <class name="com.qa.whatuni.testScript.RegistrationTest">
+        <methods>
+          <include name="singUpTestWithValidData"/>
+          <include name="flush"/>
+          <include name="SetupReport"/>
+          <include name="reportFlush"/>
+          <include name="VerifySigUpTest"/>
+          <include name="VerifySignIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.whatuni.testScript.RegistrationTest -->
+      <class name="com.qa.whatuni.testScript.CategorySearchTest">
+        <methods>
+          <include name="flush"/>
+          <include name="setUp"/>
+          <include name="reportFlush"/>
+        </methods>
+      </class> <!-- com.qa.whatuni.testScript.CategorySearchTest -->
+      <class name="com.qa.whatuni.testScript.KeywordSearchTest">
+        <methods>
+          <include name="flush"/>
+          <include name="setUp"/>
+          <include name="reportFlush"/>
+        </methods>
+      </class> <!-- com.qa.whatuni.testScript.KeywordSearchTest -->
+    </classes>
+  </test> <!-- RegistrationTest(failed) -->
+</suite> <!-- Failed suite [Whatuni Regression] -->

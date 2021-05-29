@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="16" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Whatuni Regression" duration-ms="127563" started-at="2021-04-12T06:19:55Z" finished-at="2021-04-12T06:22:03Z">
+    <groups>
+    </groups>
+    <test name="RegistrationTest" duration-ms="53965" started-at="2021-04-12T06:19:55Z" finished-at="2021-04-12T06:20:49Z">
+      <class name="com.qa.whatuni.testScript.RegistrationTest">
+        <test-method status="PASS" signature="SetupReport()[pri:0, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="SetupReport" is-config="true" duration-ms="5" started-at="2021-04-12T11:49:55Z" finished-at="2021-04-12T11:49:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="setUp" is-config="true" duration-ms="11797" started-at="2021-04-12T11:49:55Z" finished-at="2021-04-12T11:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="verifyHomePageTitle" duration-ms="1088" started-at="2021-04-12T11:50:07Z" finished-at="2021-04-12T11:50:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="openSignUpWindow()[pri:2, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="openSignUpWindow" duration-ms="3011" started-at="2021-04-12T11:50:08Z" finished-at="2021-04-12T11:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSignUpWindow -->
+        <test-method status="PASS" signature="signUpTestWithNoData()[pri:3, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="signUpTestWithNoData" duration-ms="1457" started-at="2021-04-12T11:50:11Z" finished-at="2021-04-12T11:50:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTestWithNoData -->
+        <test-method status="PASS" signature="singUpTestWithValidData()[pri:4, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="singUpTestWithValidData" duration-ms="1674" started-at="2021-04-12T11:50:13Z" finished-at="2021-04-12T11:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singUpTestWithValidData -->
+        <test-method status="PASS" signature="VerifySigUpTest()[pri:5, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="VerifySigUpTest" duration-ms="9619" started-at="2021-04-12T11:50:14Z" depends-on-methods="com.qa.whatuni.testScript.RegistrationTest.singUpTestWithValidData" finished-at="2021-04-12T11:50:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySigUpTest -->
+        <test-method status="FAIL" signature="VerifySignIn()[pri:6, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="VerifySignIn" duration-ms="23737" started-at="2021-04-12T11:50:24Z" depends-on-methods="com.qa.whatuni.testScript.RegistrationTest.VerifySigUpTest" finished-at="2021-04-12T11:50:48Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.qa.whatuni.util.ElementUtils.getAttributeValue(ElementUtils.java:156)
+	at com.qa.whatuni.page.RegistrationPage.verifyLoggedInUser(RegistrationPage.java:174)
+	at com.qa.whatuni.testScript.RegistrationTest.VerifySignIn(RegistrationTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySignIn -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="flush" is-config="true" duration-ms="1248" started-at="2021-04-12T11:50:48Z" finished-at="2021-04-12T11:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="reportFlush()[pri:0, instance:com.qa.whatuni.testScript.RegistrationTest@482cd91f]" name="reportFlush" is-config="true" duration-ms="309" started-at="2021-04-12T11:50:49Z" finished-at="2021-04-12T11:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+      </class> <!-- com.qa.whatuni.testScript.RegistrationTest -->
+    </test> <!-- RegistrationTest -->
+    <test name="CategorySearchTest" duration-ms="35217" started-at="2021-04-12T06:20:49Z" finished-at="2021-04-12T06:21:25Z">
+      <class name="com.qa.whatuni.testScript.CategorySearchTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="setUp" is-config="true" duration-ms="11071" started-at="2021-04-12T11:50:49Z" finished-at="2021-04-12T11:51:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:1, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="verifyHomePage" duration-ms="1042" started-at="2021-04-12T11:51:00Z" finished-at="2021-04-12T11:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="categorySearchTest()[pri:2, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="categorySearchTest" duration-ms="9038" started-at="2021-04-12T11:51:01Z" finished-at="2021-04-12T11:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categorySearchTest -->
+        <test-method status="PASS" signature="VerifyProviderResult()[pri:3, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="VerifyProviderResult" duration-ms="4347" started-at="2021-04-12T11:51:10Z" depends-on-methods="com.qa.whatuni.testScript.CategorySearchTest.categorySearchTest" finished-at="2021-04-12T11:51:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProviderResult -->
+        <test-method status="PASS" signature="VerifyCourseDetailPage()[pri:4, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="VerifyCourseDetailPage" duration-ms="4033" started-at="2021-04-12T11:51:15Z" depends-on-methods="com.qa.whatuni.testScript.CategorySearchTest.VerifyProviderResult" finished-at="2021-04-12T11:51:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCourseDetailPage -->
+        <test-method status="PASS" signature="VerifyProviderPage()[pri:5, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="VerifyProviderPage" duration-ms="4466" started-at="2021-04-12T11:51:19Z" depends-on-methods="com.qa.whatuni.testScript.CategorySearchTest.VerifyCourseDetailPage" finished-at="2021-04-12T11:51:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProviderPage -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="flush" is-config="true" duration-ms="1172" started-at="2021-04-12T11:51:23Z" finished-at="2021-04-12T11:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="reportFlush()[pri:0, instance:com.qa.whatuni.testScript.CategorySearchTest@17c1bced]" name="reportFlush" is-config="true" duration-ms="39" started-at="2021-04-12T11:51:25Z" finished-at="2021-04-12T11:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+      </class> <!-- com.qa.whatuni.testScript.CategorySearchTest -->
+    </test> <!-- CategorySearchTest -->
+    <test name="KeywordSearchTest" duration-ms="38129" started-at="2021-04-12T06:21:25Z" finished-at="2021-04-12T06:22:03Z">
+      <class name="com.qa.whatuni.testScript.KeywordSearchTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="setUp" is-config="true" duration-ms="10787" started-at="2021-04-12T11:51:25Z" finished-at="2021-04-12T11:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:1, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="verifyHomePage" duration-ms="1029" started-at="2021-04-12T11:51:35Z" finished-at="2021-04-12T11:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="categorySearchTest()[pri:2, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="categorySearchTest" duration-ms="11466" started-at="2021-04-12T11:51:36Z" finished-at="2021-04-12T11:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categorySearchTest -->
+        <test-method status="PASS" signature="VerifyProviderResult()[pri:3, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="VerifyProviderResult" duration-ms="3757" started-at="2021-04-12T11:51:48Z" depends-on-methods="com.qa.whatuni.testScript.KeywordSearchTest.categorySearchTest" finished-at="2021-04-12T11:51:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProviderResult -->
+        <test-method status="PASS" signature="VerifyCourseDetailPage()[pri:4, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="VerifyCourseDetailPage" duration-ms="4376" started-at="2021-04-12T11:51:52Z" depends-on-methods="com.qa.whatuni.testScript.KeywordSearchTest.VerifyProviderResult" finished-at="2021-04-12T11:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCourseDetailPage -->
+        <test-method status="PASS" signature="VerifyProviderPage()[pri:5, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="VerifyProviderPage" duration-ms="5490" started-at="2021-04-12T11:51:56Z" depends-on-methods="com.qa.whatuni.testScript.KeywordSearchTest.VerifyCourseDetailPage" finished-at="2021-04-12T11:52:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProviderPage -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="flush" is-config="true" duration-ms="1178" started-at="2021-04-12T11:52:02Z" finished-at="2021-04-12T11:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method status="PASS" signature="reportFlush()[pri:0, instance:com.qa.whatuni.testScript.KeywordSearchTest@23282c25]" name="reportFlush" is-config="true" duration-ms="39" started-at="2021-04-12T11:52:03Z" finished-at="2021-04-12T11:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+      </class> <!-- com.qa.whatuni.testScript.KeywordSearchTest -->
+    </test> <!-- KeywordSearchTest -->
+  </suite> <!-- Whatuni Regression -->
+</testng-results>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Whatuni Regression" verbose="4" thread-count="1" parallel="none" >
+	 <listeners>
+		<listener class-name="com.qa.whatuni.listeners.ExtendReports" />
+	</listeners>
+	
+	<test verbose="2" name="RegistrationTest" preserve-order="true" >
+		<classes>
+			<class name="com.qa.whatuni.testScript.RegistrationTest"  />
+		</classes>
+	</test> 
+	<test verbose="2" name="CategorySearchTest" preserve-order="true" >
+		<classes>
+			<class name="com.qa.whatuni.testScript.CategorySearchTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="KeywordSearchTest" preserve-order="true" >
+		<classes>
+			<class name="com.qa.whatuni.testScript.KeywordSearchTest" />
+		</classes>
+	</test>
+	<!-- Default test -->
+</suite> <!-- Default suite -->
